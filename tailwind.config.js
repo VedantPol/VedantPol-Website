@@ -12,7 +12,11 @@ module.exports = {
       current: 'currentColor',
       ...colors,
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        terminal: '0 24px 80px rgba(0, 0, 0, 0.28)',
+      },
+    },
   },
   variants: {
     extend: {},

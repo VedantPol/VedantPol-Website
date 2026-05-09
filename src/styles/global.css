@@ -21,21 +21,31 @@ div#__next > div {
   overflow: auto;
 }
 
+body {
+  background: #101316;
+  color: #e8ece3;
+}
+
+::selection {
+  background: #f6c560;
+  color: #101316;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e252e;
+  background: #151a1f;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ebdbb2;
+  background: #4dd0e1;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff8037;
+  background: #f6c560;
 }
