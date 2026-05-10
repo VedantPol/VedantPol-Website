@@ -104,8 +104,10 @@ Links
 
 export const projects = async (args: string[]): Promise<string> => {
   return `Enterprise RAG Knowledge Assistant
-  GenAI assistant for policy and technical document search using semantic retrieval, metadata filtering, reranking, and citation-grounded answer generation.
-  Stack: Python, LangChain, Pinecone, FastAPI, Docker
+  Live source-aware GenAI assistant for policy and technical document search using semantic retrieval, metadata filtering, reranking, temporary PDF indexing, Docker, Cloudflare Tunnel, and citation-grounded answer generation.
+  Stack: Python, LangChain, FastAPI, Docker, Cloudflare Tunnel
+  ${link('https://enterprise_rag.vedant-home-server.in/', 'Live app')}
+  ${link('https://github.com/VedantPol/enterprise-rag-knowledge-assistant', 'GitHub repo')}
 
 Multi-Agent Knowledge Management System
   Agentic LLM workflow using LangGraph with Retriever, Planner, Critic, and Summarizer agents, plus guardrails for prompt injection, unsupported claims, citation validation, and hallucination detection.
