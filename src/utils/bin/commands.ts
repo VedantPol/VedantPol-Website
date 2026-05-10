@@ -110,8 +110,11 @@ export const projects = async (args: string[]): Promise<string> => {
   ${link('https://github.com/VedantPol/enterprise-rag-knowledge-assistant', 'GitHub repo')}
 
 Multi-Agent Knowledge Management System
-  Agentic LLM workflow using LangGraph with Retriever, Planner, Critic, and Summarizer agents, plus guardrails for prompt injection, unsupported claims, citation validation, and hallucination detection.
+  Live agentic LLM workflow using LangGraph with Retriever, Planner, Critic, and Summarizer agents, plus AutoGen judge evaluation, prompt-injection guardrails, unsupported-claim checks, citation validation, and hallucination detection.
+  Status: Live
   Stack: LangGraph, AutoGen, FastAPI, Docker
+  ${link('https://multi_agent_kms.vedant-home-server.in/', 'Live app')}
+  ${link('https://github.com/VedantPol/multi-agent-knowledge-manager', 'GitHub repo')}
 
 LLM Evaluation and Regression Testing Framework
   Automated evaluation for factuality, safety, hallucination rate, formatting quality, latency, business-rule compliance, citation presence, retrieval quality, adversarial prompts, and missing-context handling.
