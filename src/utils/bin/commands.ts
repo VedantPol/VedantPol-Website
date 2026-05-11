@@ -116,9 +116,12 @@ Multi-Agent Knowledge Management System
   ${link('https://multi_agent_kms.vedant-home-server.in/', 'Live app')}
   ${link('https://github.com/VedantPol/multi-agent-knowledge-manager', 'GitHub repo')}
 
-LLM Evaluation and Regression Testing Framework
-  Automated evaluation for factuality, safety, hallucination rate, formatting quality, latency, business-rule compliance, citation presence, retrieval quality, adversarial prompts, and missing-context handling.
-  Stack: Python, Playwright, Pytest, Allure, MLflow
+RetailPulse AI: Forecasting & Recommendation Platform
+  Live Dockerized retail analytics platform for demand forecasting, stockout risk scoring, anomaly detection, product recommendations, feature-importance explainability, and AI-assisted business insights.
+  Status: Live
+  Stack: Python, FastAPI, Streamlit, LightGBM, scikit-learn, Docker
+  ${link('https://retail_pulse.vedant-home-server.in/', 'Live app')}
+  ${link('https://github.com/VedantPol/retailpulse-ai', 'GitHub repo')}
 
 Open Source: XWiki Snap Package
   Universal Snap package for XWiki with automated builds and deployment docs.
