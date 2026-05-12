@@ -5,7 +5,7 @@ const linkClass = 'text-light-blue dark:text-dark-blue underline';
 const summary = async (args: string[]): Promise<string> => {
   return `
               __
-             / /   AI Systems & Automation
+             / /   Data & GenAI Engineering
         ____/ /    ------------------------
        / __  /     Name: ${config.name}
       / /_/ /      Role: ${config.headline}
@@ -18,9 +18,9 @@ CONTACT
   Resume: <a class="${linkClass}" href="${config.resume_url}" target="_blank" rel="noreferrer">latest PDF</a>
 
 FOCUS
-  RAG systems, LLM evaluation, fraud-risk workflows,
-  compliance search, prompt-injection testing, CI/CD,
-  Docker, Kubernetes, AWS, Playwright, MLflow.
+  Banking data automation, payment validation,
+  GenAI QA tooling, document parsing, structured
+  JSON outputs, feature engineering, AWS, MLOps.
 
 Try: skills, experience, projects, certs, patent
 `;

@@ -50,7 +50,7 @@ export const about = async (args: string[]): Promise<string> => {
 ${config.headline}
 ${config.location}
 
-I am a Computer Science engineer and AI-focused SDET working on AI systems and automation at IDFC First Bank. My experience spans RAG systems, LLM evaluation, fraud-risk analysis workflows, compliance search, automated test pipelines, Linux packaging, CI/CD, Docker, Kubernetes, AWS, and open-source development through Google Summer of Code with XWiki.
+I am a Computer Science engineer and AI-focused SDET working on banking data automation and GenAI QA tooling at IDFC FIRST Bank. My experience spans payment systems, expected-vs-actual validation, SQL/database checks, log analysis, GenAI test-design tools, document parsing, structured outputs, ML fundamentals, AWS, MLOps, and open-source development through Google Summer of Code with XWiki.
 
 Try:
 skills       see my technical stack
@@ -79,15 +79,16 @@ ML, MLOps and Automation
 };
 
 export const experience = async (args: string[]): Promise<string> => {
-  return `IDFC First Bank, Mumbai
-Software Development Engineer in Test, AI Systems & Automation
+  return `IDFC FIRST Bank, Mumbai
+Software Development Engineer in Test, Data Automation & GenAI QA
 2024 - Present
 
-  - Built and evaluated a GenAI fraud-risk analysis workflow across 284K+ transaction records, improving fraud-case triage recall by 25%.
-  - Developed a RAG compliance and policy search system with LangChain, Pinecone, embeddings, metadata filtering, and citation-grounded retrieval; indexed 500+ regulatory and operational documents and reduced manual lookup time by 60%.
-  - Designed a RAG benchmarking framework across chunking, embeddings, top-k, reranking, and prompt templates; improved grounded-answer accuracy from 78% to 91%.
-  - Built reusable LLM/RAG evaluation datasets for golden questions, source checks, adversarial prompts, missing-context queries, Recall@K, Precision@K, MRR, faithfulness, hallucination rate, latency, and cost per query.
-  - Built an automated LLM evaluation pipeline with Playwright, Python, GoCD, and Allure; reduced manual review cycles by 50%.
+  - Built data-driven automation frameworks for payments, escrow, DigiXCRO/CMS, and UPI banking workflows.
+  - Validated transactions through expected-vs-actual comparison, SQL/database checks, log analysis, and reliable QA reporting.
+  - Developed a GenAI QA Test Design Generator with Python, FastAPI, Streamlit, SQLite, and OpenAI-compatible LLM APIs.
+  - Converted FSDs, architecture docs, Jira issues, and Confluence pages into structured test cases and traceability matrices.
+  - Generated assumptions, coverage gaps, and downloadable JSON/DOCX/XLSX outputs through prompt engineering and document parsing.
+  - Built DS/AI depth in feature engineering, model evaluation, AWS, and MLOps for fintech and document-intelligence roles.
 
 Google Summer of Code, XWiki
 Software Engineering Intern, Open Source
@@ -266,10 +267,10 @@ export const neofetch = async (args?: string[]): Promise<string> => {
   const str = `
           .--.                     ${config.name}@${config.ps1_hostname}
          |o_o |                    ------------------------------
-         |:_/ |                    Role: AI Systems & Automation SDET
+         |:_/ |                    Role: Data Automation & GenAI QA
         //   \\ \\                   Location: ${config.location}
-       (|     | )                  Focus: RAG, LLM eval, GenAI workflows
-      /'\\_   _/\`\\                 Stack: Python, LangChain, Playwright
+       (|     | )                  Focus: Data validation, GenAI QA
+      /'\\_   _/\`\\                 Stack: Python, SQL, FastAPI
       \\___)=(___/                 Cloud: AWS, Docker, Kubernetes
 `;
   return str;
