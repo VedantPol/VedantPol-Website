@@ -24,11 +24,11 @@ export const help = async (args: string[]): Promise<string> => {
 ${commands.join(', ')}
 
 Good starting points:
-summary      compact profile card
-about        current professional summary
-skills       AI, ML, automation, and cloud skills
-experience   work history from the latest resume
-projects     selected GenAI and ML projects
+summary      compact AI/ML profile card
+about        current DS/ML/AI summary
+skills       data science, GenAI, ML, and cloud skills
+experience   applied AI, analytics, and engineering impact
+projects     selected GenAI, RAG, forecasting, and ML projects
 education    degree and coursework
 certs        certifications and awards
 patent       patent work
@@ -50,7 +50,7 @@ export const about = async (args: string[]): Promise<string> => {
 ${config.headline}
 ${config.location}
 
-I am a Computer Science engineer and AI-focused SDET working on banking data automation and GenAI QA tooling at IDFC FIRST Bank. My experience spans payment systems, expected-vs-actual validation, SQL/database checks, log analysis, GenAI test-design tools, document parsing, structured outputs, ML fundamentals, AWS, MLOps, and open-source development through Google Summer of Code with XWiki.
+I am a Computer Science engineer focused on Data Science, Machine Learning, and Applied AI. I build GenAI applications, RAG knowledge systems, forecasting and recommendation platforms, document-intelligence workflows, analytics pipelines, and production-ready ML services using Python, SQL, FastAPI, LangChain, LangGraph, scikit-learn, LightGBM, AWS, Docker, and MLOps practices. My fintech experience at IDFC FIRST Bank gives me strong domain exposure to banking data, payments, transaction analytics, and reliable data-driven systems, while my Google Summer of Code work with XWiki strengthened my open-source engineering and cloud deployment foundation.
 
 Try:
 skills       see my technical stack
@@ -63,40 +63,50 @@ export const skills = async (args: string[]): Promise<string> => {
   return `Languages
   Python, SQL, Java, Bash
 
+Data Science and Analytics
+  Pandas, NumPy, exploratory data analysis, feature engineering,
+  statistical analysis, data cleaning, business metrics, dashboards,
+  transaction analytics, forecasting datasets
+
+Machine Learning and Deep Learning
+  scikit-learn, LightGBM, PyTorch, Hugging Face Transformers,
+  classification, regression, recommendation systems, anomaly detection,
+  time-series forecasting, model evaluation, explainability
+
 GenAI and LLMs
   Retrieval-Augmented Generation, LangChain, LangGraph, LLM Evaluation,
   Prompt Engineering, LLM-as-Judge, Agentic Workflows, Guardrails,
-  Prompt Injection Testing
+  prompt-injection defense, structured JSON outputs
 
 Retrieval and Vector Search
   Embeddings, Pinecone, Milvus, FAISS, Semantic Search, Hybrid Search,
   Reranking, Metadata Filtering, Chunking Strategies,
   Citation-Grounded Generation
 
-ML, MLOps and Automation
-  PyTorch, Hugging Face Transformers, scikit-learn, MLflow, Docker,
-  Kubernetes, AWS SageMaker, Kafka, Spark, Playwright, Pytest, Allure, GoCD`;
+MLOps, Data Engineering and Cloud
+  MLflow, Docker, Kubernetes, AWS SageMaker, Kafka, Spark, FastAPI,
+  Streamlit, CI/CD, monitoring, reproducible model services`;
 };
 
 export const experience = async (args: string[]): Promise<string> => {
   return `IDFC FIRST Bank, Mumbai
-Software Development Engineer in Test, Data Automation & GenAI QA
+Data, ML & GenAI Engineer - Fintech Analytics
 2024 - Present
 
-  - Built data-driven automation frameworks for payments, escrow, DigiXCRO/CMS, and UPI banking workflows.
-  - Validated transactions through expected-vs-actual comparison, SQL/database checks, log analysis, and reliable QA reporting.
-  - Developed a GenAI QA Test Design Generator with Python, FastAPI, Streamlit, SQLite, and OpenAI-compatible LLM APIs.
-  - Converted FSDs, architecture docs, Jira issues, and Confluence pages into structured test cases and traceability matrices.
-  - Generated assumptions, coverage gaps, and downloadable JSON/DOCX/XLSX outputs through prompt engineering and document parsing.
-  - Built DS/AI depth in feature engineering, model evaluation, AWS, and MLOps for fintech and document-intelligence roles.
+  - Work with banking data across payments, escrow, DigiXCRO/CMS, and UPI workflows to build reliable analytics and data-validation pipelines.
+  - Use Python, SQL, log analysis, and expected-vs-actual reconciliation to transform high-volume transaction flows into actionable data insights.
+  - Built GenAI document-intelligence tools with Python, FastAPI, Streamlit, SQLite, and OpenAI-compatible LLM APIs.
+  - Converted FSDs, architecture docs, Jira issues, and Confluence pages into structured requirements, traceability matrices, assumptions, and coverage-gap analysis.
+  - Developed DS/AI depth in feature engineering, model evaluation, prompt engineering, structured output generation, AWS, and MLOps for fintech AI systems.
+  - Explore applied ML use cases around transaction analytics, anomaly detection, document parsing, knowledge retrieval, and AI-assisted decision support.
 
 Google Summer of Code, XWiki
 Software Engineering Intern, Open Source
 Jun 2022 - Sep 2022, Remote
 
-  - Built the XWiki Snap package and automated cloud-ready release workflows using CI/CD, Linux packaging, Docker, Kubernetes, and deployment automation.
+  - Built the XWiki Snap package and automated cloud-ready release workflows using CI/CD, Linux packaging, Docker, Kubernetes, and deployment engineering.
   - Contributed 24 PRs, 85 commits, and 7K+ lines of code.
-  - Created user and developer documentation for setup, builds, packaging, automation, and deployment.
+  - Created user and developer documentation for setup, builds, packaging, reproducible environments, and deployment.
 
 Links
   ${link('https://github.com/xwiki-contrib/packaging-snap/commits/main', 'XWiki packaging-snap commits')}
@@ -105,20 +115,20 @@ Links
 
 export const projects = async (args: string[]): Promise<string> => {
   return `Enterprise RAG Knowledge Assistant
-  Live source-aware GenAI assistant for policy and technical document search using semantic retrieval, metadata filtering, reranking, temporary PDF indexing, Docker, Cloudflare Tunnel, and citation-grounded answer generation.
+  Live source-aware GenAI assistant for policy and technical document search using embeddings, semantic retrieval, metadata filtering, reranking, temporary PDF indexing, Docker, Cloudflare Tunnel, and citation-grounded answer generation.
   Stack: Python, LangChain, FastAPI, Docker, Cloudflare Tunnel
   ${link('https://enterprise_rag.vedant-home-server.in/', 'Live app')}
   ${link('https://github.com/VedantPol/enterprise-rag-knowledge-assistant', 'GitHub repo')}
 
 Multi-Agent Knowledge Management System
-  Live agentic LLM workflow using LangGraph with Retriever, Planner, Critic, and Summarizer agents, plus AutoGen judge evaluation, prompt-injection guardrails, unsupported-claim checks, citation validation, and hallucination detection.
+  Live agentic AI workflow using LangGraph with Retriever, Planner, Critic, and Summarizer agents, plus AutoGen judge evaluation, prompt-injection guardrails, unsupported-claim checks, citation validation, and hallucination detection.
   Status: Live
   Stack: LangGraph, AutoGen, FastAPI, Docker
   ${link('https://multi_agent_kms.vedant-home-server.in/', 'Live app')}
   ${link('https://github.com/VedantPol/multi-agent-knowledge-manager', 'GitHub repo')}
 
 RetailPulse AI: Forecasting & Recommendation Platform
-  Live Dockerized retail analytics platform for demand forecasting, stockout risk scoring, anomaly detection, product recommendations, feature-importance explainability, and AI-assisted business insights.
+  Live Dockerized data science platform for demand forecasting, stockout risk scoring, anomaly detection, product recommendations, feature-importance explainability, and AI-assisted business insights.
   Status: Live
   Stack: Python, FastAPI, Streamlit, LightGBM, scikit-learn, Docker
   ${link('https://retail_pulse.vedant-home-server.in/', 'Live app')}
@@ -267,9 +277,9 @@ export const neofetch = async (args?: string[]): Promise<string> => {
   const str = `
           .--.                     ${config.name}@${config.ps1_hostname}
          |o_o |                    ------------------------------
-         |:_/ |                    Role: Data Automation & GenAI QA
+         |:_/ |                    Role: Data Science / ML / AI
         //   \\ \\                   Location: ${config.location}
-       (|     | )                  Focus: Data validation, GenAI QA
+       (|     | )                  Focus: GenAI, RAG, forecasting
       /'\\_   _/\`\\                 Stack: Python, SQL, FastAPI
       \\___)=(___/                 Cloud: AWS, Docker, Kubernetes
 `;
