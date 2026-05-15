@@ -24,11 +24,11 @@ export const help = async (args: string[]): Promise<string> => {
 ${commands.join(', ')}
 
 Good starting points:
-summary      compact AI/ML profile card
-about        current DS/ML/AI summary
-skills       data science, GenAI, ML, and cloud skills
-experience   applied AI, analytics, and engineering impact
-projects     selected GenAI, RAG, forecasting, and ML projects
+summary      compact ML/GenAI/DS profile card
+about        current ML, GenAI, and Data Science summary
+skills       ML, GenAI, data science, and cloud skills
+experience   applied ML, GenAI, analytics, and engineering impact
+projects     selected RAG, agentic AI, forecasting, and ML projects
 education    degree and coursework
 certs        certifications and awards
 patent       patent work
@@ -50,7 +50,7 @@ export const about = async (args: string[]): Promise<string> => {
 ${config.headline}
 ${config.location}
 
-I am a Computer Science engineer focused on Data Science, Machine Learning, and Applied AI. I build GenAI applications, RAG knowledge systems, forecasting and recommendation platforms, document-intelligence workflows, analytics pipelines, and production-ready ML services using Python, SQL, FastAPI, LangChain, LangGraph, scikit-learn, LightGBM, AWS, Docker, and MLOps practices. My fintech experience at IDFC FIRST Bank gives me strong domain exposure to banking data, payments, transaction analytics, and reliable data-driven systems, while my Google Summer of Code work with XWiki strengthened my open-source engineering and cloud deployment foundation.
+I am a Computer Science engineer focused on Machine Learning, Generative AI, and Data Science. I build RAG knowledge assistants, agentic GenAI workflows, forecasting and recommendation platforms, document-intelligence systems, analytics products, and production-ready ML services using Python, SQL, FastAPI, LangChain, LangGraph, scikit-learn, LightGBM, AWS, Docker, and MLOps practices. My fintech experience at IDFC FIRST Bank gives me strong domain exposure to banking data, payments, transaction intelligence, anomaly patterns, and data-driven decision systems, while my Google Summer of Code work with XWiki strengthened my open-source engineering and cloud deployment foundation.
 
 Try:
 skills       see my technical stack
@@ -90,13 +90,13 @@ MLOps, Data Engineering and Cloud
 
 export const experience = async (args: string[]): Promise<string> => {
   return `IDFC FIRST Bank, Mumbai
-Data, ML & GenAI Engineer - Fintech Analytics
+ML, GenAI & Data Science Engineer - Fintech Analytics
 2024 - Present
 
-  - Work with banking data across payments, escrow, DigiXCRO/CMS, and UPI workflows to build reliable analytics and data-validation pipelines.
-  - Use Python, SQL, log analysis, and expected-vs-actual reconciliation to transform high-volume transaction flows into actionable data insights.
-  - Built GenAI document-intelligence tools with Python, FastAPI, Streamlit, SQLite, and OpenAI-compatible LLM APIs.
-  - Converted FSDs, architecture docs, Jira issues, and Confluence pages into structured requirements, traceability matrices, assumptions, and coverage-gap analysis.
+  - Work with banking data across payments, escrow, DigiXCRO/CMS, and UPI workflows to build ML-ready datasets, analytics products, and fintech intelligence pipelines.
+  - Use Python, SQL, log mining, feature extraction, and cohort analysis to transform high-volume transaction flows into actionable data science insights.
+  - Built GenAI document-intelligence tools with Python, FastAPI, Streamlit, SQLite, embeddings, and OpenAI-compatible LLM APIs.
+  - Turn product, architecture, and business documents into semantic knowledge bases, structured insights, entity extraction outputs, and AI-assisted analytics workflows.
   - Developed DS/AI depth in feature engineering, model evaluation, prompt engineering, structured output generation, AWS, and MLOps for fintech AI systems.
   - Explore applied ML use cases around transaction analytics, anomaly detection, document parsing, knowledge retrieval, and AI-assisted decision support.
 
@@ -277,7 +277,7 @@ export const neofetch = async (args?: string[]): Promise<string> => {
   const str = `
           .--.                     ${config.name}@${config.ps1_hostname}
          |o_o |                    ------------------------------
-         |:_/ |                    Role: Data Science / ML / AI
+         |:_/ |                    Role: ML / GenAI / Data Science
         //   \\ \\                   Location: ${config.location}
        (|     | )                  Focus: GenAI, RAG, forecasting
       /'\\_   _/\`\\                 Stack: Python, SQL, FastAPI

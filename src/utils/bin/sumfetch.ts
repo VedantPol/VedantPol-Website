@@ -5,8 +5,8 @@ const linkClass = 'text-light-blue dark:text-dark-blue underline';
 const summary = async (args: string[]): Promise<string> => {
   return `
               __
-             / /   Data Science, ML & AI
-        ____/ /    ----------------------
+             / /   ML, GenAI & Data Science
+        ____/ /    ------------------------
        / __  /     Name: ${config.name}
       / /_/ /      Role: ${config.headline}
       \\__,_/       Location: ${config.location}
@@ -18,8 +18,8 @@ CONTACT
   Resume: <a class="${linkClass}" href="${config.resume_url}" target="_blank" rel="noreferrer">latest PDF</a>
 
 FOCUS
-  GenAI apps, RAG knowledge systems, forecasting,
-  recommendations, anomaly detection, document AI,
+  RAG assistants, agentic GenAI workflows, forecasting,
+  recommendations, anomaly detection, document intelligence,
   fintech analytics, feature engineering, AWS, MLOps.
 
 Try: skills, experience, projects, certs, patent
